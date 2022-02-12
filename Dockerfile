@@ -9,6 +9,8 @@ ENV USER2=${USER2}
 ARG PASSWORD2
 ENV PASSWORD2=${PASSWORD2}
 
+USER root
+
 COPY emailsync.sh /usr/local/bin/emailsync
 
 RUN chmod +x /usr/local/bin/emailsync
